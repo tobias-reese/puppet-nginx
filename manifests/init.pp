@@ -67,7 +67,7 @@ class nginx (
   $types_hash_bucket_size         = undef,
   $types_hash_max_size            = undef,
   $worker_connections             = undef,
-  $worker_processes               = undef,
+  $worker_processes               = 1,
   $worker_rlimit_nofile           = undef,
   ### END Nginx Configuration
 
