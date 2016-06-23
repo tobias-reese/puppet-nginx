@@ -72,8 +72,8 @@ class nginx::config(
   $mail                           = false,
   $stream                         = false,
   $multi_accept                   = 'off',
-  $names_hash_bucket_size         = '64',
-  $names_hash_max_size            = '512',
+  $names_hash_bucket_size         = 64,
+  $names_hash_max_size            = 512,
   $nginx_cfg_prepend              = false,
   $proxy_buffers                  = '32 4k',
   $proxy_buffer_size              = '8k',
@@ -100,9 +100,9 @@ class nginx::config(
   $ssl_stapling                   = 'off',
   $types_hash_bucket_size         = '512',
   $types_hash_max_size            = '1024',
-  $worker_connections             = '1024',
-  $worker_processes               = '1',
-  $worker_rlimit_nofile           = '1024',
+  $worker_connections             = 1024,
+  $worker_processes               = 1,
+  $worker_rlimit_nofile           = 1024,
   ### END Nginx Configuration ###
 ) inherits ::nginx::params {
 
